@@ -1,3 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'assets/custom-bootstrap-variables';
+
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Override bootstrap variables here
+
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+// Custom variables/rules that require bootstrap variables
+$navbar-light-border: 1px solid $gray-400;
+
+.navbar-light {
+    border-bottom: $navbar-light-border;
+}
